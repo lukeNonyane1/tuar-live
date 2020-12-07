@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "mysql" {
-    source = "../../../modules/data-stores/mysql"
+    source = "git@github.com:lukeNonyane1/tuar-modules.git//data-stores/mysql"
     
     cluster_name = "${var.cluster_name}"
     db_remote_state_bucket = "${var.db_remote_state_bucket}"

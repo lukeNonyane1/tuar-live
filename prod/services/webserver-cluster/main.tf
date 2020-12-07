@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "webserver_cluster" {
-  source = "../../../modules/services/webserver-cluster"
+  source = "git@github.com:lukeNonyane1/tuar-modules.git//services/webserver-cluster"
   
 
   cluster_name = "webservers_prod"
